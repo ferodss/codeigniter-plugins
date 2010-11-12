@@ -5,6 +5,7 @@
  * Extends CI_Output library
  *
  * @author Felipe Djinn <felipe@felipedjinn.com.br>
+ * @link   https://github.com/felipedjinn/codeigniter-plugins
  */
 class MY_Output extends CI_Output
 {
