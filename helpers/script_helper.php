@@ -66,7 +66,8 @@ if ( ! function_exists('script'))
         {
             if ( strpos($script, '://') === false )
             {
-                $script = $CI->config->slash_item('base_url') . $javascript_path . $script .'.js';
+                $script = $CI->config->slash_item('base_url')
+                        . rtrim($javascript_path,'/') . '/' . $script . '.js';
             }
 
             $output .= sprintf("\n<script type=\"text/javascript\" src=\"%s\"></script>", $script);
