@@ -20,9 +20,30 @@
  *
  * This class enables you to use view templates
  *
+ * Usage:
+ *
+ * You have two ways to load library.
+ *
+ * First is to load in controller's constructor function: 
+ *   $this->load->library('layout'); OR
+ *   $this->load->library('layout', 'template_name');
+ *
+ * The second is by autoload the library editing config/autoload.php
+ *   $autoload['libraries'] = array('layout');
+ *
+ *
+ * After load Layout library, you can load your's views like this:
+ *   $this->layout->view('your_view', $data);
+ * 
+ *
+ * In your template, <?php echo $content; ?> to display your view.
+ *
+ *
  * @package    CodeIgniter
  * @subpackage Libraries
+ * @category   Layout
  * @author     Felipe Djinn <felipe@felipedjinn.com.br>
+ * @varsion    0.2
  * @link       https://github.com/felipedjinn/codeigniter-plugins
  */
 class Layout
@@ -100,7 +121,7 @@ class Layout
      */
     public function view($view, $data = array(), $return = false)
     {
-        $this->data['content_for_layout'] = $this->load->view($view, $data, true);
+        $this->set('content', $this->load->view($view, $data, true));
 
         if( $return == true )
         {
