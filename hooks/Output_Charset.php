@@ -86,6 +86,8 @@ class Output_Charset
      * particular object are removed or when the object is explicitly 
      * destroyed or in any order in shutdown sequence.
      *
+     * Call CI_Output::_display()
+     *
      * @return void
      */
     public function __destruct()
@@ -97,4 +99,3 @@ class Output_Charset
 
 /* End of file Output_Charset.php */
 /* Location: application/hooks/Output_Charset.php */
-

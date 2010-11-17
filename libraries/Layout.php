@@ -38,6 +38,7 @@
  *
  * In your template, <?php echo $content; ?> to display your view.
  *
+ * And be happy! =)
  *
  * @package    CodeIgniter
  * @subpackage Libraries
@@ -132,3 +133,7 @@ class Layout
     }
    
 }
+// END Layout Class
+
+/* End of file Layout.php */
+/* Location: application/libraries/Layout.php */
