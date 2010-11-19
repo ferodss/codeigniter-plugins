@@ -34,13 +34,13 @@
  *
  * Usage:
  * <code>
- * echo script('jquery');
+ * echo script_tag('jquery');
  * // <script type="text/javascript" src="http://www.example.com/javascripts/jquery.js"></script>
  *
- * echo script('http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js');
+ * echo script_tag('http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js');
  * // <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
  *
- * echo script(array('jquery', 'application'));
+ * echo script_tag(array('jquery', 'application'));
  * //<script type="text/javascript" src="http://www.example.com/javascripts/jquery.js"></script>
  * //<script type="text/javascript" src="http://www.example.com/javascripts/application.js"></script>
  * </code>
@@ -51,7 +51,7 @@
  */
 if ( ! function_exists('script'))
 {
-    function script($scripts = null, $javascript_path = 'javascripts')
+    function script_tag($scripts = null, $javascript_path = 'javascripts')
     {
         if ( $scripts == null ) return null;
 
