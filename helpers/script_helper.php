@@ -49,7 +49,7 @@
  * @param  string       JavaScript path
  * @return string|null  Formated html
  */
-if ( ! function_exists('script'))
+if ( ! function_exists('script_tag'))
 {
     function script_tag($scripts = null, $javascript_path = 'javascripts')
     {
