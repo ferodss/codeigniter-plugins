@@ -23,7 +23,7 @@
  * Usage:
  *
  * Autoload this class editing config/autoload.php
- *  $autoload['autoload'] = array('request');
+ *  $autoload['libraries'] = array('request');
  *
  * In your controllers, you have a request property with a instance
  * for this class.
